@@ -21,3 +21,30 @@ and follow the instructions here for your terminal:
 
 https://github.com/romkatv/powerlevel10k#manual-font-installation
 
+## Updating config
+
+If you run:
+
+```
+p10k configure
+```
+
+Then a new configuration will be generated at `~/.p10k.zsh`.
+
+Then to update this repository you should do the following:
+
+```
+cp -f ~/.p10k.zsh ~/.p10k/dotfiles/
+cp -f ~/.p10k/dotfiles/.* ~/
+```
+
+Alternatively just call the helper script at
+
+```
+~/.p10k/scripts/import-configuration
+```
+
+after running `p10k configure` to do the copiies
+
+Then add, commit and push.
+
